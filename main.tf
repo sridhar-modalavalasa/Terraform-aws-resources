@@ -90,7 +90,7 @@ resource "aws_route_table_association" "MyAssociation" {
 }
 
 resource "aws_instance" "web"{
-  ami           = var.ami
+  ami           = "ami-026b57f3c383c2eec"
   instance_type = var.instance_type
   subnet_id = aws_subnet.MyPublicsubnet1.id
   tags = {
